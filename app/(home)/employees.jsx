@@ -12,7 +12,7 @@ const employees = () => {
     useEffect(() => {
         const fetchEmployeeData = async () => {
             try {
-                const response = await axios.get("https://jsonplaceholder.typicode.com/posts");
+                const response = await axios.get("https://api-employee.onrender.com/employees");
                 setEmployees(response.data);
             } catch (error) {
                 console.log(error);
